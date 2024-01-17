@@ -4,9 +4,10 @@
  * @return {number}
  */
 var numberOfEmployeesWhoMetTarget = function(hours, target) {
-    return hours.reduce((acumulador, valor)=>{
-        if(valor >= target)
-            return ++acumulador;
-        return acumulador;
-    },0)
+    let acumulador = 0;
+    for(let i =0; i < hours.length; i++){
+        if(hours[i]>= target)
+            acumulador++;
+    }
+    return acumulador
 };
