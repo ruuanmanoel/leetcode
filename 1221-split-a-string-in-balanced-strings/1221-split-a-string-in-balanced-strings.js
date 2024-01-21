@@ -8,10 +8,8 @@ var balancedStringSplit = function(s) {
     for(let i = 0; i <s.length; i++){
         if(s.charAt(i) == 'R'){
             validar++;
-        }
-        if(s.charAt(i)=='L'){
+        }else
             validar--;
-        }
         if(validar ==0) contador++;
     }
     return contador;
